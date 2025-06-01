@@ -1,13 +1,12 @@
 {
   "name": "Pixelfed",
   "available": true,
-  "deprecated": true,
   "exposable": true,
   "dynamic_config": true,
   "port": 3219,
   "id": "pixelfed",
   "tipi_version": 1,
-  "version": "7.2",
+  "version": "v0.12.5",
   "categories": [
     "photography",
     "social"
@@ -15,7 +14,7 @@
   "description": "A free and ethical photo sharing platform, powered by ActivityPub federation.",
   "short_desc": "¨Photo sharing platform",
   "author": "pixelfed",
-  "source": "https://github.com/pixelfed/pixelfeda",
+  "source": "https://github.com/pixelfed/pixelfed",
   "form_fields": [
     {
       "type": "email",
@@ -32,13 +31,11 @@
     {
       "type": "boolean",
       "label": "Open registration",
-      "required": true,
       "env_variable": "PIXELFED_OPEN_REGISTRATION"
     },
     {
       "type": "boolean",
       "label": "Enforce email verification",
-      "required": true,
       "env_variable": "PIXELFED_ENFORCE_EMAIL_VERIFICATION"
     },
     {
