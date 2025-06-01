@@ -31,22 +31,6 @@
       ]
     },
     {
-      "name": "pixelfed-worker",
-      "image": "elestio/pixelfed:latest",
-      "dependsOn": ["pixelfed-db","pixelfed-redis"],
-      "volumes": [
-        {
-          "hostPath": "${APP_DATA_DIR}/data/app",
-          "containerPath": "/var/www"
-        },
-        {
-          "hostPath": "${APP_DATA_DIR}/app.env",
-          "containerPath": "/var/www/.env"
-        }
-      ],
-      "command": "gosu www-data php artisan horizon"
-    },
-    {
       "name": "pixelfed-db",
       "image": "mariadb:jammy",
       "environment": {
