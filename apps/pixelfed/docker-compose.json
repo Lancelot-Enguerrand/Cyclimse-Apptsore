@@ -18,7 +18,6 @@
         "DB_USERNAME": "pixelfed",
         "DB_PASSWORD": "${PIXELFED_DB_PASSWORD}"
       },
-      "dependsOn": ["pixelfed-db","pixelfed-redis"],
       "volumes": [
         {
           "hostPath": "${APP_DATA_DIR}/data/app",
